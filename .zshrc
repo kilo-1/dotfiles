@@ -47,3 +47,6 @@ git config user.email "trc.kilo0@gmail.com"
 
 export PATH="$HOME/scripts:$PATH"
 
+alias syncconfig="~/scripts/sync_config.sh"
+
+
