@@ -42,6 +42,7 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# random git stuff
 git config user.name "kilo's mac"
 git config user.email "trc.kilo0@gmail.com"
 
@@ -49,4 +50,7 @@ export PATH="$HOME/scripts:$PATH"
 
 alias syncconfig="~/scripts/sync_config.sh"
 
-
+# Start tmux only in an interactive shell and if not already in a tmux session
+if [[ $- == *i* ]] && [[ -z $TMUX ]]; then
+  tmux
+fi
