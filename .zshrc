@@ -50,6 +50,8 @@ export PATH="$HOME/scripts:$PATH"
 
 alias syncconfig="~/scripts/sync_config.sh"
 
+
+
 # Start tmux only in an interactive shell and if not already in a tmux session
 if [[ $- == *i* ]] && [[ -z $TMUX ]]; then
   tmux
